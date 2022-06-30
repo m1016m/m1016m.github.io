@@ -1,76 +1,119 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css">
-    <title>Django教學第一堂</title>
+    <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="bg1">
-            <h2>6<span>|24</span></h2>
-            <p>Goals Completed</p>
-        </div>
-        <div class="bg2">
-            <h2><i class="fas fa-battery-three-quarters"></i></h2>
-            <p>Respiration</p>
-        </div> 
-        <div class="bg1">
-            <h2>6<span>|24</span></h2>
-            <p>Goals Completed</p>
-        </div>
-        <div class="bg2">
-            <h2><i class="fas fa-battery-three-quarters"></i></h2>
-            <p>Respiration</p>
-        </div> 
-
-        <div class="bg1">
-            <h2>6<span>|24</span></h2>
-            <p>Goals Completed</p>
-        </div>
-        <div class="bg2">
-            <h2><i class="fas fa-battery-three-quarters"></i></h2>
-            <p>Respiration</p>
-        </div> 
-        <div class="bg1">
-            <h2>6<span>|24</span></h2>
-            <p>Goals Completed</p>
-        </div>
-        <div class="bg2">
-            <h2><i class="fas fa-battery-three-quarters"></i></h2>
-            <p>Respiration</p>
-        </div> 
-        <div class="bg1">
-            <h2>6<span>|24</span></h2>
-            <p>Goals Completed</p>
-        </div>
-        <div class="bg2">
-            <h2><i class="fas fa-battery-three-quarters"></i></h2>
-            <p>Respiration</p>
-        </div> 
-        <div class="bg1">
-            <h2>6<span>|24</span></h2>
-            <p>Goals Completed</p>
-        </div>
-        <div class="bg2">
-            <h2><i class="fas fa-battery-three-quarters"></i></h2>
-            <p>Respiration</p>
-        </div> 
-        <div class="bg1">
-            <h2>6<span>|24</span></h2>
-            <p>Goals Completed</p>
-        </div>
-        <div class="bg2">
-            <h2><i class="fas fa-battery-three-quarters"></i></h2>
-            <p>Respiration</p>
-        </div> 
-        <div class="bg1">
-            <h2>6<span>|24</span></h2>
-            <p>Goals Completed</p>
-        </div>
+    <!-- 這裡是註解文字，只會在 HTML code 裡看到，不會出現在畫面 -->
+    <!--
+        這裡是多行註解
+        這裡是多行註解
+        這裡是多行註解
+    -->
+    <p>This is some content</p>
+    <h1>This is heading</h1>
+    <h2>This is heading</h2>
+    <h3>This is heading</h3>
+    <h4>This is heading</h4>
+    <h5>This is heading</h5>
+    <h6>This is heading</h6>
+    <p><strong>This</strong> is some content</p>
+    <p><strong>This</strong> <i>i</i>s some content</p>
+    <font size="1">文字</font></br>
+    <font size="2">文字</font></br>
+    <font size="3">文字</font></br>
+    <div>
+        <h1>111</h1>
+        <p>222</p>
     </div>
+    <span></span>
+    <!-- 以下是語意標籤nav -->
+    <nav class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      
+      <h1>The Daily News</h1>
+<!-- 以下是語意標籤article -->
+<article>
+  <h2>News 1</h2>
+  <!-- article content -->
+</article>
+
+<article>
+    <h2>News 2</h2>
+    <!-- article content -->
+</article>
+
+<!-- 以下是語意標籤article -->
+
+<article class="forecast">
+    <h1>Weather forecast for Seattle</h1>
     
+    <article class="day-forecast">
+      <h2>03 March 2018</h2>
+      <p>Rain.</p>
+    </article>
+    
+    <article class="day-forecast">
+      <h2>04 March 2018</h2>
+      <p>Periods of rain.</p>
+    </article>
+    
+    <article class="day-forecast">
+      <h2>05 March 2018</h2>
+      <p>Heavy rain.</p>
+    </article>
+  </article>
+  
+<!-- 以下是語意標籤 <section> 群組區塊 -->
+  <section>
+    <h1>Heading</h1>
+    <p>Bunch of awesome content</p>
+  </section>
+
+  <!-- 以下是語意標籤 <section> 群組區塊 + article -->
+  <article>
+    <section id="intro">
+        <!-- 介紹 -->
+    </section>
+  
+    <section id="main_content">
+        <!-- 主內容 -->
+    </section>
+  
+    <section id="related">
+        <ul>
+            <li><a href="that.html">相關文章</a></li>
+            <li><a href="this.html">相關文章</a></li>
+        </ul>
+    </section>
+  </article>
+  
+
+ 
+    <p>
+      The Disney movie <cite>The Little Mermaid</cite> was
+      first released to theatres in 1989.
+    </p>
+    <aside>
+      <p>
+        The movie earned $87 million during its initial release.
+      </p>
+    </aside>
+    <p>
+      More info about the movie...
+    </p>
+    
+    <header>
+        <h1>Main Page Title l</h1>
+        <img src="mdn-logo-sm.png" alt="MDN logo">
+      </header>
+      
 </body>
-</html> 
+</html>
