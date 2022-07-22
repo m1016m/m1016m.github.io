@@ -2,40 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="sec.css" rel="stylesheet">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    
+    <title>M.M. Party - 韓國最好玩最好吃行程</title>
 </head>
 <body>
-    <!-- 這裡是註解文字，只會在 HTML code 裡看到，不會出現在畫面 -->
-    <!--
-        這裡是多行註解
-        這裡是多行註解
-        這裡是多行註解
-    -->
-    <!--header-->
   <header>
-    <h1>< header ><p>可放置頁面主要標題、LOGO 等</p></h1>
-  </header>
-    <!-- 這裡是nav標籤 -->
-    <!--nav--> 
-  <nav>
-    < nav ><p>此網頁的導覽區塊</p>
-    <ul>
-    </ul>
+  <div class="container">
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="pictures/logo.jpg">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">最新消息</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              相關行程
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">韓國最好玩</a></li>
+              <li><a class="dropdown-item" href="#">歐洲自由行</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">澳洲無尾熊</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">聯絡我們</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
   </nav>
-   <!-- 這裡是article裡面放section標籤 -->
-  <article>
-    < article ><p>內容區</p>
-    <section>< section ><p>網頁內容的區塊-1</p></section>
-  </article>
-  <!-- 這裡是aside側邊欄標籤 -->
-  <aside>
-    < aside ><p>側邊欄位可放置額外資訊、相關連結等</p>
-  </aside>
-  <!--footer-->
-  <footer>
-    < footer ><p>頁腳處，可在此聲明版權、使用規範等等</p>
-  </footer>
-    
+</div>
+</header>
+    <section id="intro">
+      <div class="container-fluid bg-light p-5">
+      <div class="container">
+        <div class="col-md-12">
+          <h1 class="display-4">韓國最好玩最好吃行程</h1>
+          <p class="lead">生活悶悶地？加入我們一齊出國啦！</p>
+          <a class="btn btn-primary btn-lg" href="#" role="button">參加行程</a>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!--介簡的區塊-->
+        <section id="second">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <h3>M.M. Party - 韓國最好玩最好吃行程</h3>
+                    <div class='row'>
+                      <div class='col-md-4 text-center'>
+                        <img src='pictures/inner.png'>
+                        <h5>小編 M M</h5>
+                      </div>
+                      <div class='col-md-8 text-left'>
+                        <p class='lead'>韓國旅遊究竟有多好玩？可以讓去過的人一再流連忘返？我們推薦一定要去的韓國景點給你！</p>
+                        <p>這些都是超好玩的韓國旅遊推薦以及韓國旅遊景點，韓國自由行一定要安排這些地點，絕對都是去韓國首爾景點的重點！</p>
+                        <p>比如南怡島、愛寶樂園、韓服體驗、南山公園、東大門、景福宮、樂天世界、北村韓屋村、三清洞、仁寺洞、廣藏市場，與我們一起去狂歡！</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
 </body>
 </html>
