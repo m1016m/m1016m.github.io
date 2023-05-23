@@ -1,0 +1,84 @@
+#app.container-fluid
+  .indep_cover
+  .row
+    .col-sm-3.scroll_able.col-control
+      h2 飯店資訊
+      hr
+      .form-group
+        label 總折數
+        input.form-control(v-model='discount')
+      .form-group
+        label 服務費
+        input.form-control(v-model='tip')
+      .form-group
+        button.btn.btn-outline-primary(@click="price_raise(100)") 萬物齊漲(+100)
+      br
+      h2 房型編輯 ({{rooms.length}}間)
+      hr
+      .form-group(v-for='(room,id) in rooms').room_edit
+        
+        label.room_tag
+          h4 {{room.name}}
+            i.fa.fa-trash.delete_btn(@click='delete_room(id)')
+          input.toggle_check(type="checkbox")
+          .edit_part
+            hr
+            .form-group
+              label 名稱(中)
+              input.form-control(v-model='room.name')
+            .form-group
+              label 名稱(英)
+              input.form-control(v-model='room.eng')
+            .form-group
+              label 折價
+              input.form-control(v-model='room.discount')
+            .form-group
+              label 價錢
+              input.form-control(v-model='room.price')
+            .form-group
+              label 圖片
+              input.form-control(v-model='room.cover')
+            .form-group.equips
+              label 設備
+              label wifi
+                input(type='checkbox' v-model='room.equipment.wifi')
+              label 浴缸
+                input(type='checkbox' v-model='room.equipment.bathtub')
+              label 早餐
+                input(type='checkbox' v-model='room.equipment.breakfast')
+      .form-group.room_edit.add_room(@click="add_new_room") + 新房間
+
+      
+    .col-sm-9.scroll_able.col-rooms
+      .row
+        .col-sm-12
+          h2 房型一覽
+          hr
+        Room(
+          v-for='(room,id) in rooms',
+            :room_data="room",
+            :hotel_discount="discount",
+            :hotel_tip="tip",
+            :id="id",
+            :delete_room="delete_room"
+          )
+
+template#room
+  .col-lg-4.col-md-6.col-sm-12.room_col
+    .room_container(v-if="room_data")
+      .cover(v-bind:style='bg_css(room_data.cover)')
+        h3 {{room_data.name}}
+        i.fa.fa-times.btn-delete(@click='delete_room(id)')
+      .info
+        h5 {{room_data.eng}}
+          span.icons(v-if="room_data.equipment")
+            i.fa.fa-wifi(v-if='room_data.equipment.wifi')
+            i.fa.fa-bathtub(v-if='room_data.equipment.bathtub')
+            i.fa.fa-coffee(v-if='room_data.equipment.breakfast')
+        h5 
+          span {{room_data.discount}}*{{hotel_discount}}
+          span =
+          span {{parseInt(room_data.discount*hotel_discount*100)}} 折
+        h4 TWD 
+          s {{room_data.price}}
+          span.final_price {{final_price}}$
