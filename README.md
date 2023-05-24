@@ -2,11 +2,6 @@
 
 ![home-jumbotron](https://i.imgur.com/IrMGOdv.png)
 
-## Demo
-https://vii120.github.io/vue-ec-shop/dist/
-
- *\*註：因購物車為共用，故點進網頁時可能會發生**購物車已經有東西**的狀況*
-
 ## Intro
 
 使用vue cli及vue router製作的購物網站，包含商品選購、編輯購物車及結帳功能，亦有小遊戲在內！
@@ -54,15 +49,3 @@ https://vii120.github.io/vue-ec-shop/dist/
 * CSS框架：使用**Bootstrap**作為主要排版與響應式設計的工具
 * Vue工具：使用**vue cli**、**vue router**及**vuex**製作
 
-## Plug-ins
-* [VueAxios](https://www.npmjs.com/package/vue-axios)
-* [Vue Loading Overlay](https://github.com/ankurk91/vue-loading-overlay)
-* [VeeValidate](https://github.com/baianat/vee-validate)
-
-## API
-* [六角學院 vue-course-api](https://github.com/hexschool/vue-course-api-wiki/wiki)
-* 商品頁的隨機圖片：[Lorem Picsum](https://picsum.photos/)
-* 遊戲中的隨機個人資料：[Random User](https://randomuser.me/)
-
-## Reference
-六角學院：[Vue 出一個電商網站 ](https://www.udemy.com/vue-hexschool/)
