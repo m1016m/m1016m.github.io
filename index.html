@@ -1,23 +1,216 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Weird Store | Life is too short to be normal.</title>
-    <link rel="icon" type="image/png" href="static/image/icon.png">
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124056360-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-124056360-1');
-    </script>
-  </head>
-  <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="html, css, 網頁, JS, javascript">
+    <meta name="description" content="Here is my page.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joy">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- 字型 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- title小圖示 -->
+    <link rel="icon" href="img/logo/logo_small.svg">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Home</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-0">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index"><img src="img/logo.png" alt="logo" width="145"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">主頁</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.google.com.tw" target="_blank">最新消息</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">VUE</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="imovie.html">作品之一</a></li>
+                                    <li><a class="dropdown-item" href="ihotel.html">作品之二</a></li>
+                                    <!-- <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">聯絡我們</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control rounded-0 rounded-start border border-end-0" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success rounded-0 rounded-end fa-solid fa-magnifying-glass px-3" type="submit"></button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="intro" style="background: linear-gradient(45deg, rgb(128 127 67 / 90%), transparent) 20%, url(img/view.jpg) no-repeat center;background-size: cover;">
+        <div class="container">
+            <div class="col-12 col-md-6">
+                <h1 class="display-4 text-light fw-medium">探索未知，啟程旅遊</h1>
+                <p class="lead text-light mt-3">拋開生活的壓力和束縛，擁抱新的文化、體驗不同風土人情，擴展我們的視野，並找到那些令我們心靈深處感動的事物。</p>
+                <a href="#" class="btn rounded-2">了解更多</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="second">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <h3 class="text-center">旅社簡介</h3>
+                    <div class="row justify-content-around align-items-center">
+                        <div class="col-md-5 self">
+                            <img src="img/self.jpg" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="img/logo.png" class="d-block mb-4" alt="logo" width="180">
+                            <p class="lead mb-5">「GOGO Travel」旅行社自2014年創立以來，足跡遍布全世界，我們是您最可以信賴的旅行社。為您提供安心感的旅程，讓您盡情探索世界，創造美好回憶。</p>
+                            <ul>
+                                <li class="mb-3">2014年熱愛旅遊的創辦人 Joy Chen 創立「GOGO Travel」</li>
+                                <li class="my-3">榮獲政府認證「優質旅行社」標章</li>
+                                <li class="my-3">創立至今已服務超過2000位客人，出團300組</li>
+                                <li class="my-3">足跡遍布全球，超過50個國家</li>
+                                <li class="my-3">每年捐出所得20%協助「地球保育展望會」</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="latest">
+        <div class="container">
+            <div class="row text-center">
+                <h3>推薦方案</h3>
+                <div class="col-md-4 text-left">
+                    <div class="outer">
+                        <a href="#">
+                            <div class="upper">
+                                <img src="img/france.jpg" alt="">                                                               
+                                <div class="innertext">
+                                    <span class="text-light fw-semibold">優惠限時中</span>
+                                </div>
+                            </div>   
+                        </a>
+                        <div class="lower">
+                            <h3>迷人的法國：揭開美麗生活的魔力</h3>
+                            <p><i class="fas fa-map-marker-alt me-2"></i>法國巴黎</p>
+                            <p><i class="far fa-clock me-2"></i>2023 / 10 / 08 ~ 2023 / 10 / 15</p>
+                            <button class="btn mt-3">了解更多</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-left">
+                    <div class="outer">
+                        <a href="#">
+                            <div class="upper">
+                                <img src="img/venice.jpg" alt="">                                                               
+                                <div class="innertext">
+                                    <span class="text-light fw-semibold">尚餘 2 位名額</span>
+                                </div>
+                            </div>   
+                        </a>
+                        <div class="lower">
+                            <h3>威尼斯揭秘：擁抱漂浮之城的浪漫氛圍</h3>
+                            <p><i class="fas fa-map-marker-alt me-2"></i>義大利威尼斯</p>
+                            <p><i class="far fa-clock me-2"></i>2023 / 10 / 08 ~ 2023 / 10 / 15</p>
+                            <button class="btn mt-3">了解更多</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-left">
+                    <div class="outer">
+                        <a href="#">
+                            <div class="upper">
+                                <img src="img/england.jpg" alt="">                                                               
+                                <div class="innertext">
+                                    <span class="text-light fw-semibold">尚餘 8 位名額</span>
+                                </div>
+                            </div>   
+                        </a>
+                        <div class="lower">
+                            <h3>探索英格蘭：穿越時光與傳統的旅程</h3>
+                            <p><i class="fas fa-map-marker-alt me-2"></i>英國倫敦</p>
+                            <p><i class="far fa-clock me-2"></i>2023 / 10 / 08 ~ 2023 / 10 / 15</p>
+                            <button class="btn mt-3">了解更多</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="email">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">                   
+                    <h3>訂閱 GOGO Travel</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <p>訂閱GOGO Travel，隨時掌握最新最優惠的旅遊資訊</p>
+                    <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="請輸入E-mail">
+                    </div>
+                    <a class="btn btn-primary btn-lg mt-4" href="#" role="button">訂閱</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="img/logo.png" alt="" width="170">
+              <p>換個環境，傾聽心的聲音<br>GOGO Travel 您最可信賴的旅伴</p>
+            </div>
+            <div class="col-md-4">
+              <h4>網站地圖</h4>
+              <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="all.html">最新消息</a></li>
+              </ul>
+              <ul>
+                <li><a href="faq.html">Vue作品</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>聯絡我們</h4>
+              <p>高雄市左營區香榭麗舍大道20號30樓<br>
+                Phone：(07) 345-2568<br>
+                E-mail：<a href="mailto:gogtravel@gmail.com">gogtravel@gmail.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
 </html>
